@@ -1,0 +1,6 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: semantic-exploration-icra-2023
+
+Files: README.md .gitmodules
+Copyright: 2020-2023 Smart Robotics Lab, Imperial College London, Technical University of Munich
+License: CC0-1.0
