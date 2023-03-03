@@ -4,3 +4,6 @@
 [submodule "semanticeight-ros"]
 	path = semanticeight-ros
 	url = ../semanticeight-ros.git
+[submodule "habitat-mav-sim"]
+	path = habitat-mav-sim
+	url = ../habitat-mav-sim.git
