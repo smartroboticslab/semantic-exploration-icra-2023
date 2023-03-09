@@ -1,3 +1,6 @@
 [submodule "mav_comm"]
 	path = mav_comm
 	url = https://github.com/ethz-asl/mav_comm.git
+[submodule "semanticeight-ros"]
+	path = semanticeight-ros
+	url = ../semanticeight-ros.git
