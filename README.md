@@ -29,13 +29,27 @@ the `ros-noetic-desktop-full` package by following the
 and then install the dependencies:
 
 ``` sh
-sudo apt install make cmake gcc g++ git libeigen3-dev libopencv-dev
+sudo apt-get --yes install git g++ cmake libeigen3-dev libopencv-dev libyaml-cpp-dev python3-catkin-tools
 ```
 
 
 ## Build
 
-TODO (create workspace, recursive clone, build)
+``` sh
+# Create and initialize a new catkin workspace.
+source /opt/ros/noetic/setup.bash
+mkdir -p ~/exploration_ws/src
+cd ~/exploration_ws
+catkin init
+
+# Clone this repository and all submodules.
+cd ~/exploration_ws/src
+git clone --recurse-submodules https://github.com/smartroboticslab/semantic-exploration-icra-2023.git
+
+# Build all ROS packages.
+catkin build -DCMAKE_BUILD_TYPE=Release
+source ~/exploration_ws/devel/setup.bash
+```
 
 
 ## Usage
