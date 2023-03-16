@@ -6,6 +6,13 @@ This repository contains the code and simulator for the ICRA 2023
 paper “Finding Things in the Unknown: Semantic Object-Centric
 Exploration with an MAV”.
 
+<table style="text-align:center">
+  <tr>
+    <td><img src="res/exploration.gif" alt="animation of top-down view of exploration"></td>
+    <td><img src="res/objects.jpg" alt="top-down view of reconstruction and individual objects"></td>
+  </tr>
+</table>
+
 In this work we broaden the scope of autonomous exploration beyond just
 uncovering free space into creating a map with semantic and object-level
 information, useful for higher-level robotic tasks. We study the task of both

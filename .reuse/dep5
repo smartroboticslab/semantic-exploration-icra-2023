@@ -4,3 +4,7 @@ Upstream-Name: semantic-exploration-icra-2023
 Files: README.md .gitmodules
 Copyright: 2020-2023 Smart Robotics Lab, Imperial College London, Technical University of Munich
 License: CC0-1.0
+
+Files: *.gif *.jpg *.jpeg *.png
+Copyright: 2020-2023 Smart Robotics Lab, Imperial College London, Technical University of Munich
+License: CC-BY-SA-4.0
