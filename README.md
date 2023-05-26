@@ -32,7 +32,7 @@ and ROS Noetic. Install the `ros-noetic-desktop-full` package by following the
 and then install the dependencies:
 
 ``` sh
-sudo apt-get --yes install git g++ cmake libeigen3-dev libopencv-dev libyaml-cpp-dev python3-catkin-tools
+sudo apt-get install cmake g++ git libcgal-dev libeigen3-dev libompl-dev libopencv-dev libyaml-cpp-dev python3-catkin-tools
 ```
 
 Create and initialize a new catkin workspace:
