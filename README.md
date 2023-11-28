@@ -64,6 +64,17 @@ source ~/exploration_ws/devel/setup.bash
 TODO (dataset download, launch files)
 
 
+## Project structure
+
+This repository consists of several ROS packages:
+
+* `semanticeight_ros`: The mapping and exploration planning node.
+* `habitat_mav_sim`: The MAV simulator using the
+  [Habitat-Sim](https://aihabitat.org/) simulator.
+* `mav_comm`: Message definitions needed when using the
+  [RotorS](https://github.com/ethz-asl/rotors_simulator) simulator.
+
+
 ## Citing
 
 If you found the code in this repository useful in your work you can use the
