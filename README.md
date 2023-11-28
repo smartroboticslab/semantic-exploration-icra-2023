@@ -59,9 +59,55 @@ source ~/exploration_ws/devel/setup.bash
 ```
 
 
+## Dataset download
+
+To download the Matterport3D dataset for use with Habitat-Sim follow the
+instructions from
+[here](https://github.com/facebookresearch/habitat-sim/blob/main/DATASETS.md#matterport3d-mp3d-dataset).
+In short:
+
+1. Get the official Matterport3D download script from
+   [here](https://niessner.github.io/Matterport/).
+2. Run it as follows (requires Python 2):
+
+    ``` sh
+    python download_mp.py --task habitat -o path/to/download
+    ```
+
+
 ## Usage
 
-TODO (dataset download, launch files)
+### Using `habitat_mav_sim`
+
+To run on the `2t7WUuJeko7` sequence of the Matterport3D dataset modify the
+`scene_file` key in
+[semanticeight-ros/config/matterport3d/2t7WUuJeko7.yaml](semanticeight-ros/config/matterport3d/2t7WUuJeko7.yaml)
+to point to the downloaded `.glb` file and run:
+
+``` sh
+roslaunch semanticeight_ros habitat.launch config:='$(find semanticeight_ros)/config/matterport3d/2t7WUuJeko7.yaml' rviz:=true
+```
+
+### Using Gazebo + RotorS
+
+After installing Gazebo and building the
+[RotorS](https://github.com/ethz-asl/rotors_simulator) simulator in the same
+workspace as this project run:
+
+``` sh
+roslaunch semanticeight_ros gazebo.launch world:=maze rviz:=true
+```
+
+The possible values for the `world` argument are: `apartment`, `maze` and
+`powerplant`. To add another Gazebo world, say `office.world`, just place the
+`office.world` file in [semanticeight-ros/worlds](semanticeight-ros/worlds) and
+create an `office.yaml` file in
+[semanticeight-ros/config/gazebo](semanticeight-ros/config/gazebo). You can
+then run on the `office` world using:
+
+``` sh
+roslaunch semanticeight_ros gazebo.launch world:=office rviz:=true
+```
 
 
 ## Project structure
